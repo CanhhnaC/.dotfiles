@@ -1,0 +1,15 @@
+{
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.validate": ["typescript"],
+  "eslint.lintTask.options": [".", "--ext", ".ts"],
+  "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
+  "typescript.suggestionActions.enabled": false,
+  "tsserver.formatOnType": true
+}

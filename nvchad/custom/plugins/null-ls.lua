@@ -3,6 +3,7 @@ local b = null_ls.builtins
 
 local sources = {
    b.diagnostics.codespell,
+   b.diagnostics.misspell,
    b.formatting.prettier
 }
 

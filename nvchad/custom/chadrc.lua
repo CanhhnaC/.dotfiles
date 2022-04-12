@@ -3,12 +3,14 @@ local M = {}
 local plugin_conf = require "custom.plugins.configs"
 local userPlugins = require "custom.plugins"
 
-M.plugins = {
-   scrolloff = 4,
+M.options = {
    relativenumber = true,
+}
 
+M.plugins = {
    status = {
       colorizer = true,
+      alpha = true,
    },
 
    options = {

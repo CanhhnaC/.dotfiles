@@ -1,7 +1,5 @@
 return {
-
-   {
-      "windwp/nvim-ts-autotag",
+   ["windwp/nvim-ts-autotag"] = {
       ft = { "html", "javascriptreact" },
       after = "nvim-treesitter",
       config = function()
@@ -9,12 +7,14 @@ return {
       end,
    },
 
-   {
-      "jose-elias-alvarez/null-ls.nvim",
+   ["jose-elias-alvarez/null-ls.nvim"] = {
       after = "nvim-lspconfig",
       config = function()
          require("custom.plugins.null-ls").setup()
       end,
    },
-
+   
+  ["goolord/alpha-nvim"] = {
+     disable = false,
+  },
 }

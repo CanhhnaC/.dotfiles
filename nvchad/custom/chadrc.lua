@@ -4,8 +4,10 @@ local plugin_conf = require "custom.plugins.configs"
 local userPlugins = require "custom.plugins"
 
 M.options = {
-   scrolloff = 4,
-   relativenumber = true,
+   user = function()
+      vim.opt.relativenumber = true
+
+   end,
 }
 
 M.plugins = {
@@ -20,13 +22,13 @@ M.plugins = {
       },
    },
 
-   default_plugin_config_replace = {
-      nvim_treesitter = plugin_conf.treesitter,
-      nvim_tree = plugin_conf.nvimtree,
-      gitsigns = plugin_conf.gitsigns,
+   override = {
+      ["kyazdani42/nvim-tree.lua"] = plugin_conf.nvimtree,
+      ["nvim-treesitter/nvim-treesitter"] = plugin_conf.treesitter,
+      ["nvim-telescope/telescope.nvim"] = plugin_conf.telescope,
    },
 
-   install = userPlugins,
+   user = userPlugins,
 }
 
 return M

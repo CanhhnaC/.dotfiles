@@ -22,6 +22,7 @@ M.setup_lsp = function(attach, capabilities)
          },
       }
    end
+   
 end
 
 return M

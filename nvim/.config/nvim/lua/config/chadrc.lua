@@ -6,7 +6,6 @@ local userPlugins = require "custom.plugins"
 M.options = {
    user = function()
       vim.opt.relativenumber = true
-
    end,
 }
 

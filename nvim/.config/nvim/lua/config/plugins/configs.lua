@@ -24,7 +24,7 @@ M.nvimtree = {
 }
 
 M.gitsigns = {
-  current_line_blame = true
+   current_line_blame = true
 }
 
 return M

@@ -1,33 +1,39 @@
 local M = {}
 
-local plugin_conf = require "custom.plugins.configs"
+local override = require "custom.override"
 local userPlugins = require "custom.plugins"
 
-M.options = {
-   user = function()
-      vim.opt.relativenumber = true
-   end,
+M.plugins = {
+    status = {
+        colorizer = true,
+        alpha = true
+    },
+
+    options = {
+        lspconfig = {
+            setup_lspconf = "custom.plugins.lspconfig"
+        }
+    },
+
+    override = {
+        ["kyazdani42/nvim-tree.lua"] = override.nvimtree,
+        ["nvim-treesitter/nvim-treesitter"] = override.treesitter,
+        ["lukas-reineke/indent-blankline.nvim"] = override.blankline
+    },
+
+    user = userPlugins
 }
 
-M.plugins = {
-   status = {
-      colorizer = true,
-      alpha = true,
-   },
+M.ui = {
+    hl_override = require "custom.highlights"
+}
 
-   options = {
-      lspconfig = {
-         setup_lspconf = "custom.plugins.lspconfig",
-      },
-   },
+M.mappings = require "custom.mappings"
 
-   override = {
-      ["kyazdani42/nvim-tree.lua"] = plugin_conf.nvimtree,
-      ["nvim-treesitter/nvim-treesitter"] = plugin_conf.treesitter,
-      ["nvim-telescope/telescope.nvim"] = plugin_conf.telescope,
-   },
-
-   user = userPlugins,
+M.options = {
+    user = function()
+        require "custom.options"
+    end
 }
 
 return M

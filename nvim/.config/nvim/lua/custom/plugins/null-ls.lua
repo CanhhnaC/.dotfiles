@@ -1,19 +1,17 @@
-local null_ls = require "null-ls"
+local present, null_ls = pcall(require, "null-ls")
+
+if not present then
+  return
+end
+
 local b = null_ls.builtins
 
 local sources = {
-   b.diagnostics.codespell,
-   b.diagnostics.misspell,
-   b.formatting.prettier
+  b.formatting.prettier,
+  b.formatting.stylua,
 }
 
-local M = {}
-
-M.setup = function()
-   null_ls.setup {
-      debug = true,
-      sources = sources,
-   }
-end
-
-return M
+null_ls.setup {
+  debug = true,
+  sources = sources,
+}

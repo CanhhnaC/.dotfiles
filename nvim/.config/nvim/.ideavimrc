@@ -1,0 +1,51 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set NERDTree
+set surround
+set argtextobj
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set relativenumber
+set number
+set showmode
+set scrolloff=5
+set incsearch
+set hlsearch
+set clipboard+=unnamed
+set visualbell
+set noerrorbells
+
+""" Idea specific settings ------------------
+set ideamarks
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+inoremap jk <ESC>
+
+"" go to beginning and end
+imap <C-b> <ESC>^i
+imap <C-e> <End>
+
+"" navigate within insert mode
+imap <C-h> <Left>
+imap <C-l> <Right>
+imap <C-j> <Down>
+imap <C-k> <Up>
+
+"" Switch between windows
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+
+"" Copy all
+nmap <C-c> :%y+ <CR>
+
+"" Lsp
+map <leader>fm <Action>(ReformatCode)

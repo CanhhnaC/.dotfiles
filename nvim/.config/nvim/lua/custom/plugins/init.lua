@@ -22,6 +22,10 @@ return {
     disable = false,
   },
 
+  ["tpope/vim-surround"] = {
+    after = "nvim-lspconfig"
+  },
+
   ["Pocco81/TrueZen.nvim"] = {
     cmd = {
       "TZAtaraxis",
@@ -33,18 +37,21 @@ return {
     end,
   },
 
-  ["nvim-neorg/neorg"] = {
-    ft = "norg",
-    after = "nvim-treesitter",
-    config = function()
-      require "custom.plugins.neorg"
-    end,
-  },
-
   ["nvim-treesitter/playground"] = {
     cmd = "TSCaptureUnderCursor",
     config = function()
       require("nvim-treesitter.configs").setup()
+    end,
+  },
+
+  ["andreadev-it/shade.nvim"] = {
+    module = "shade",
+    config = function()
+      require("shade").setup {
+        overlay_opacity = 50,
+        opacity_step = 1,
+        exclude_filetypes = { "NvimTree" },
+      }
     end,
   },
 }

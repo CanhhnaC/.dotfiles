@@ -1,14 +1,8 @@
 local M = {}
 
 local override = require "custom.override"
-local userPlugins = require "custom.plugins"
 
 M.plugins = {
-    status = {
-        colorizer = true,
-        alpha = true
-    },
-
     options = {
         lspconfig = {
             setup_lspconf = "custom.plugins.lspconfig"
@@ -21,7 +15,7 @@ M.plugins = {
         ["lukas-reineke/indent-blankline.nvim"] = override.blankline
     },
 
-    user = userPlugins
+    user = require "custom.plugins"
 }
 
 M.ui = {

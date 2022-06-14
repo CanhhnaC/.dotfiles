@@ -21,6 +21,13 @@ M.nvimtree = {
   git = {
     enable = true,
   },
+  renderer = {
+    icons = {
+      show = {
+        git = true,
+      }
+    }
+  }
 }
 
 M.gitsigns = {

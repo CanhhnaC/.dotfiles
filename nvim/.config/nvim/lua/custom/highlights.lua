@@ -13,21 +13,21 @@ local M = {
   NeorgUnorderedList6 = { fg = "grey" },
 
   -- headings
-  NeorgHeading1Title = { fg = "white" },
-  NeorgHeading1Prefix = { fg = "white" },
+  NeorgHeading1Title = { fg = "white", bold = true },
+  NeorgHeading1Prefix = { fg = "white", bold = true },
 
-  NeorgHeading4Title = { fg = "blue" },
-  NeorgHeading4Prefix = { fg = "blue" },
+  NeorgHeading4Title = { fg = "blue", bold = true },
+  NeorgHeading4Prefix = { fg = "blue", bold = true },
 
-  NeorgHeading5Title = { fg = "red" },
-  NeorgHeading5Prefix = { fg = "red" },
+  NeorgHeading5Title = { fg = "red", bold = true },
+  NeorgHeading5Prefix = { fg = "red", bold = true },
 
-  NeorgHeading6Title = { fg = "purple" },
-  NeorgHeading6Prefix = { fg = "purple" },
+  NeorgHeading6Title = { fg = "purple", bold = true },
+  NeorgHeading6Prefix = { fg = "purple", bold = true },
 
   NeorgMarkUpBold = {
-    fg = "red",
-    bold = true,
+     fg = "red",
+     bold = true,
   },
 }
 

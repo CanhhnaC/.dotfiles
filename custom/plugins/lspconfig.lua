@@ -4,7 +4,7 @@ M.setup_lsp = function(attach, capabilities)
   local lspconfig = require "lspconfig"
 
   -- lspservers with default config
-  local servers = { "html", "cssls", "jsonls", "tailwindcss", "tsserver", "pyright", "prismals", "graphql", "eslint" }
+  local servers = { "html", "cssls", "jsonls", "tailwindcss", "tsserver", "pyright", "clangd", "prismals", "graphql", "eslint" }
 
   for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {

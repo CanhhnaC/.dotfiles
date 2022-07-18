@@ -1,14 +1,19 @@
 local M = {}
 
 --
--- M.disabled = {
---    "<C-n>",
--- }
+M.disabled = {
+   "<S-b>",
+   "<C-v>"
+}
 
 M.general = {
-   i = {
-      ['jk'] = {"<Esc>", "   Exit insert mode"}
-   }
+  i = {
+    ["jk"] = { "<Esc>", "escape insert mode" }
+  },
+
+  n = {
+    ["<leader>wp"] = { "<cmd> set wrap! <CR>", "蝹   word wrap"}
+  }
 }
 
 M.truzen = {

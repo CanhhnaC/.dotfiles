@@ -49,4 +49,11 @@ M.blankline = {
   },
 }
 
+
+M.mason = {
+    "css-lsp",
+    "html-lsp",
+    "typescript-language-server",
+}
+
 return M

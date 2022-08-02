@@ -1,64 +1,49 @@
 return {
-  ["windwp/nvim-ts-autotag"] = {
-    ft = { "html", "javascriptreact" },
-    after = "nvim-treesitter",
-    config = function()
-      local present, autotag = pcall(require, "nvim-ts-autotag")
+	["windwp/nvim-ts-autotag"] = {
+		ft = { "html", "javascriptreact" },
+		after = "nvim-treesitter",
+		config = function()
+			require("custom.plugins.smolconfigs").autotag()
+		end,
+	},
 
-      if present then
-        autotag.setup()
-      end
-    end,
-  },
+	["jose-elias-alvarez/null-ls.nvim"] = {
+		after = "nvim-lspconfig",
+		config = function()
+			require("custom.plugins.null-ls")
+		end,
+	},
 
-  ["jose-elias-alvarez/null-ls.nvim"] = {
-    after = "nvim-lspconfig",
-    config = function()
-      require "custom.plugins.null-ls"
-    end,
-  },
+	["goolord/alpha-nvim"] = {
+		disable = false,
+	},
 
-  ["goolord/alpha-nvim"] = {
-    disable = false,
-  },
+	["tpope/vim-surround"] = {
+		after = "nvim-lspconfig",
+	},
 
-  ["tpope/vim-surround"] = {
-    after = "nvim-lspconfig"
-  },
+	["Pocco81/TrueZen.nvim"] = {
+		cmd = {
+			"TZAtaraxis",
+			"TZMinimalist",
+			"TZFocus",
+		},
+		config = function()
+			require("custom.plugins.truezen")
+		end,
+	},
 
-  ["Pocco81/TrueZen.nvim"] = {
-    cmd = {
-      "TZAtaraxis",
-      "TZMinimalist",
-      "TZFocus",
-    },
-    config = function()
-      require "custom.plugins.truezen"
-    end,
-  },
+	["andreadev-it/shade.nvim"] = {
+		module = "shade",
+		config = function()
+			require("custom.plugins.smolconfigs").shade()
+		end,
+	},
 
-  ["nvim-treesitter/playground"] = {
-    cmd = "TSCaptureUnderCursor",
-    config = function()
-      require("nvim-treesitter.configs").setup()
-    end,
-  },
-
-  ["andreadev-it/shade.nvim"] = {
-    module = "shade",
-    config = function()
-      require("shade").setup {
-        overlay_opacity = 50,
-        opacity_step = 1,
-        exclude_filetypes = { "NvimTree" },
-      }
-    end,
-  },
-
-  ["neovim/nvim-lspconfig"] = {
-    config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.plugins.lspconfig"
-    end,
-  },
+	["neovim/nvim-lspconfig"] = {
+		config = function()
+			require("plugins.configs.lspconfig")
+			require("custom.plugins.lspconfig")
+		end,
+	},
 }

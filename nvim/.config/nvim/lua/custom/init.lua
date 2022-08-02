@@ -1,4 +1,12 @@
-require "custom.autocmds"
+-- local new_cmd = vim.api.nvim_create_user_command
+local opt = vim.opt
 
-vim.cmd "silent! command! EnableShade lua require('shade').toggle()"
+-- new_cmd("EnableShade", function()
+-- 	require("shade").setup()
+-- end)
 
+opt.foldlevel = 10
+opt.cole = 1
+opt.relativenumber = true
+opt.so = 5
+opt.confirm = true

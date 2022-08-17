@@ -49,4 +49,13 @@ M.blankline = {
 	},
 }
 
+M.mason = {
+	ensure_installed = {
+		"css-lsp",
+		"html-lsp",
+		"typescript-language-server",
+		"json-lsp",
+	},
+}
+
 return M

@@ -11,7 +11,6 @@ M.treesitter = {
 		"scss",
 		"javascript",
 		"json",
-		"markdown",
 		"typescript",
 		"tsx",
 	},
@@ -46,15 +45,6 @@ M.blankline = {
 		"nvchad_cheatsheet",
 		"lsp-installer",
 		"",
-	},
-}
-
-M.mason = {
-	ensure_installed = {
-		"css-lsp",
-		"html-lsp",
-		"typescript-language-server",
-		"json-lsp",
 	},
 }
 

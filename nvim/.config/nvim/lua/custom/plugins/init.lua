@@ -18,32 +18,25 @@ return {
 		disable = false,
 	},
 
+	["folke/which-key.nvim"] = {
+		disable = false,
+	},
+
 	["tpope/vim-surround"] = {
 		after = "nvim-lspconfig",
-	},
-
-	["Pocco81/TrueZen.nvim"] = {
-		cmd = {
-			"TZAtaraxis",
-			"TZMinimalist",
-			"TZFocus",
-		},
-		config = function()
-			require("custom.plugins.truezen")
-		end,
-	},
-
-	["andreadev-it/shade.nvim"] = {
-		module = "shade",
-		config = function()
-			require("custom.plugins.smolconfigs").shade()
-		end,
 	},
 
 	["neovim/nvim-lspconfig"] = {
 		config = function()
 			require("plugins.configs.lspconfig")
 			require("custom.plugins.lspconfig")
+		end,
+	},
+
+	["phaazon/hop.nvim"] = {
+		branch = "v2", -- optional but strongly recommended
+		config = function()
+			require("hop").setup({})
 		end,
 	},
 }

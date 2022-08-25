@@ -7,8 +7,7 @@ M.plugins = {
 		["kyazdani42/nvim-tree.lua"] = override.nvimtree,
 		["nvim-treesitter/nvim-treesitter"] = override.treesitter,
 		["lukas-reineke/indent-blankline.nvim"] = override.blankline,
-    ["lewis6991/gitsigns.nvim"] = override.gitsigns,
-		["williamboman/mason.nvim"] = override.mason,
+		["lewis6991/gitsigns.nvim"] = override.gitsigns,
 	},
 
 	user = require("custom.plugins"),

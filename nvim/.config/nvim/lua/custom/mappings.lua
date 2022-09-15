@@ -6,4 +6,11 @@ M.general = {
   },
 }
 
+M.navigation = {
+  n = {
+    ["H"] = { "^", "beginning of line" },
+    ["L"] = { "$", "end of line" },
+  }
+}
+
 return M

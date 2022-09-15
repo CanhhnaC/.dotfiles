@@ -105,7 +105,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/.zsh_profile
 alias vim="nvim"
 alias lzg="lazygit"
 alias zshconfig="vim ~/.zshrc"

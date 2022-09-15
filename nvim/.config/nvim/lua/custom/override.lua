@@ -11,7 +11,6 @@ M.treesitter = {
 		"scss",
 		"javascript",
 		"json",
-		"markdown",
 		"typescript",
 		"tsx",
 	},

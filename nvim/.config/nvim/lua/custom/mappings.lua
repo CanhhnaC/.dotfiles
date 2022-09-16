@@ -18,5 +18,6 @@ M.navigation = {
     ["H"] = { "^", "beginning of line" },
     ["L"] = { "$", "end of line" },
   }
+}
 
 return M

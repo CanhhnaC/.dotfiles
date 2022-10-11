@@ -14,10 +14,10 @@ M.hop = {
 }
 
 M.navigation = {
-  n = {
-    ["H"] = { "^", "beginning of line" },
-    ["L"] = { "$", "end of line" },
-  }
+	n = {
+		["H"] = { "^", "beginning of line" },
+		["L"] = { "$", "end of line" },
+	},
 }
 
 return M

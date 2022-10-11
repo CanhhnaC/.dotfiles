@@ -22,7 +22,7 @@ M.nvimtree = {
 		enable = true,
 	},
 	renderer = {
-    highlight_git = true,
+		highlight_git = true,
 		icons = {
 			show = {
 				git = true,
@@ -51,30 +51,33 @@ M.blankline = {
 }
 
 M.alpha = {
-  header = {
-    val = {
-      "           ▄ ▄                   ",
-      "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
-      "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
-      "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
-      "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
-      "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄ ",
-      "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █ ",
-      "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █ ",
-      "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█     ",
-    },
-  },
+	header = {
+		val = {
+			"           ▄ ▄                   ",
+			"       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+			"       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+			"    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+			"  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+			"  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄ ",
+			"▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █ ",
+			"█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █ ",
+			"    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█     ",
+		},
+	},
 }
 
 M.mason = {
-  ensure_installed = {
-    "lua-language-server",
-    "stylua",
+	ensure_installed = {
+		"lua-language-server",
+		"stylua",
 
-    "css-lsp",
-    "typescript-language-server",
-    "json-lsp",
-  },
+		"css-lsp",
+		"json-lsp",
+		"typescript-language-server",
+
+		"eslint",
+		"prettier",
+	},
 }
 
 return M

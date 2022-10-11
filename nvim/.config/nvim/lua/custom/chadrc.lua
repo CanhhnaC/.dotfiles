@@ -1,12 +1,11 @@
 local M = {}
 
--- local override = require "custom.override"
+M.plugins = require("custom.plugins")
 
-M.plugins = require "custom.plugins"
+M.ui = {
+	theme = "yoru",
+}
 
---   user = require "custom.plugins",
--- }
-
-M.mappings = require "custom.mappings"
+M.mappings = require("custom.mappings")
 
 return M

@@ -5,8 +5,6 @@ return {
 
 	["goolord/alpha-nvim"] = {
 		disable = false,
-		cmd = "Alpha",
-		override_options = overrides.alpha,
 	},
 
 	["neovim/nvim-lspconfig"] = {

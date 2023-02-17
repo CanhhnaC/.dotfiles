@@ -2,7 +2,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 local utils = require "core.utils"
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "jsonls", "tsserver", "eslint" }
+local servers = { "html", "cssls", "jsonls", "tsserver", "eslint", "pyright", "black" }
 
 local on_attach = function(client, bufnr)
   client.server_capabilities.documentFormattingProvider = false

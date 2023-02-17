@@ -10,6 +10,8 @@ local sources = {
 	b.formatting.prettier,
 
 	b.formatting.stylua,
+
+	b.formatting.black
 }
 
 null_ls.setup({

@@ -61,6 +61,9 @@ M.mason = {
 
 		"eslint-lsp",
 		"prettier",
+
+		"pyright",
+		"yapf",
 	},
 }
 

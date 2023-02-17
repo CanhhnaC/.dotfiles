@@ -3,10 +3,6 @@ local overrides = require("custom.plugins.overrides")
 return {
 	-- Default plugins
 
-	["goolord/alpha-nvim"] = {
-		disable = false,
-	},
-
 	["neovim/nvim-lspconfig"] = {
 		config = function()
 			require("plugins.configs.lspconfig")
@@ -20,7 +16,7 @@ return {
 
 	-- Override default configs
 
-	["kyazdani42/nvim-tree.lua"] = {
+	["nvim-tree/nvim-tree.lua"] = {
 		override_options = overrides.nvimtree,
 	},
 
@@ -57,8 +53,8 @@ return {
 		end,
 	},
 
-	["tpope/vim-surround"] = {
-		after = "nvim-lspconfig",
+	["vim-sandwich"] = {
+		lazy = false,
 	},
 
 	["phaazon/hop.nvim"] = {

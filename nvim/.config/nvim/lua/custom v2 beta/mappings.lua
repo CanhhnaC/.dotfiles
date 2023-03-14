@@ -1,4 +1,4 @@
----@type MappingsConfig
+---@type MappingsTable
 local M = {}
 
 M.general = {}
@@ -16,5 +16,7 @@ M.navigation = {
     ["L"] = { "$", "end of line" },
   },
 }
+
+-- more keybinds!
 
 return M

@@ -1,0 +1,59 @@
+Plug 'easymotion/vim-easymotion'
+
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set NERDTree
+set surround
+set argtextobj
+set quickscope
+set easymotion
+set which-key
+
+""" Common settings -------------------------
+set relativenumber
+set number
+set showmode
+set scrolloff=5
+set incsearch
+set hlsearch
+set clipboard+=unnamed
+set visualbell
+set noerrorbells
+set notimeout
+set timeoutlen=5000
+
+""" Idea specific settings ------------------
+set ideamarks
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+inoremap jk <ESC>
+
+
+"" go to beginning and end
+imap <C-b> <ESC>^i
+imap <C-e> <End>
+
+"" navigate within insert mode
+imap <C-h> <Left>
+imap <C-l> <Right>
+imap <C-j> <Down>
+imap <C-k> <Up>
+
+"" Switch between windows
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+
+"" Copy all
+nmap <C-c> :%y+ <CR>
+
+"" Lsp
+map <leader>fm <Action>(ReformatCode)
+map <leader>ff <Action>(GotoFile)
+map <leader>fw <Action>(TextSearchAction)
+" map <leader>D <Action>(GotoTypeDeclaration)

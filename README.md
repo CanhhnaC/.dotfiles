@@ -3,7 +3,7 @@
 ### NVIM
 ```bash
 cp ~/.dotfiles/nvim/.config/nvim/lua/custom -r ~/.config/nvim/lua
-sudo ln -s "/mnt/c/Users/nguye/scoop/apps/neovim/current/bin/win32yank.exe" "/usr/local/bin/win32yank.exe"
+scoop install win32yank # in powershell
 ```
 
 ## Install zsh plugin manual
